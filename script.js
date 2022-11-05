@@ -1,6 +1,6 @@
 //#region
 //Maasivin ikinci elementinin deyerini deyis
-const names = ["Rufat","Bayram","Roman"];
+/*const names = ["Rufat","Bayram","Roman"];
 console.log(names[2]);
 names[2] = "CLASSIFIED";
 console.log(names)
@@ -122,3 +122,65 @@ function printNegatives(array){
     })
 
  //#endregion
+
+ //#region
+ // musbetler kvadrata yukselir menfiler musbet olur
+ let arry = [5,-4,-2,8,-6];
+ let newArry = arry.map((item,index)=>{
+    if(item>0){
+        return item*=2;
+    }else if(item<0){
+        return item*=-1;
+    }else{
+        return ("Yazdigin reqem deyil")
+    }
+ })
+ console.log(newArry)
+ //#endregion
+ 
+
+ //#region
+ //ilk 3 simvoldan ibaret olani secir
+let findThreeLetterWord =['Nur','Metin','Aise','Sevinc','Roman','Nazli'];
+let newLetter = findThreeLetterWord.find((item,index)=>{
+    if(item.length == 4){
+        return item;
+    }
+})
+console.log(newLetter)
+// tek setirlik kodu
+let LetterWord =['Nur','Metin','Aise','Sevinc','Roman','Nazli'];
+let Letter = LetterWord.find(item => item.length == 6)
+console.log(Letter)
+
+//#endregion
+
+//#region
+//Ilk A herfi ile baslayanlari yaz
+let namesArr = ['Rufat','Aydin','Aynur','Letif','Azer','Murad'];
+let resultNames = namesArr.filter(name=> name.startsWith("A"));
+console.log(resultNames)
+//#endregion
+
+
+//#region
+//elifbani ters duzur
+let nameARR = ['Hofstadter', 'Cooper', 'Wolowitz', 'Koothrappali'];
+let resultElif = nameARR.sort((a,b)=>{
+    if(a>b){
+        return -1;
+    }
+    })
+console.log(resultElif)
+//#endregion
+*/
+//#region
+let user = {
+    name:"Rufat",
+    gender:"Male",
+    birthday:'08.11.1990'
+};
+console.log(user.birthday)
+user.age = 25;
+delete user.birthday;
+console.log(user)
